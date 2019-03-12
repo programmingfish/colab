@@ -1,0 +1,46 @@
+.boxes{
+    display: flex; width: 100%;
+}
+.box_left{
+  width: 20%; height: auto;
+  text-align: center; border-radius: 5px;
+  border-width: thin; border-style: inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  user-select: none;
+}
+.box_left:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.box_center{
+  width: 80%; height: auto;
+  text-align: center;
+  text-align: center; border-radius: 5px;
+  border-width: thin; border-style: inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  user-select: none;
+}
+.box_right{
+  width: 10%; text-align: center;
+}
+i:hover{
+  text-shadow: 0px 2px 5px black;
+}
+.box_left_title{
+  margin-top: 0px; border-width: 0px; border-bottom-width: thin;
+  border-style: inset; outline: none; user-select: none;
+}
+.box_left_items{
+  margin-top: -10px;
+}
+.box_left_hook{
+  width: 90%; margin: auto; height: auto;
+  border-radius: 5px; border-width: thin;
+  border-style: inset; display: flex;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.icon_left_hook{float: left; font-size: 20px; margin-left: 5px}
+.text_left_hook{float: center; font-size: 20px; margin-left: 5px;}
+.box_left_hook:hover{box-shadow: 0 5px 15px rgba(0,0,0,0.3);}

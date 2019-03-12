@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birdy | Colab</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <script src="javascript/error.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta lang="en">
+    </head>
+    <body>
+        <h1>Contact Form</h1>
+        <div class="messageBox">
+            <form action="send.php" method="get">
+                <p>Please fill in the form to get in touch with is.</p>
+                <input type="text" placeholder="Your name" class="input" name="rev" id="name" required/><br>
+                <p id="name_er" class="error"></p>
+                <input type="email" placeholder="example@something.com" class="input" id="mail" name="email" required/><br>
+                <p id="email_er" class="error"></p>
+                <input type="text" placeholder="Subject here" class="input" id="sub" name="sub" required/><br>
+                <p id="quest_er" class="error"></p>
+                <textarea name="mess" id="qust"></textarea>
+                <p id="qust_er" class="error"></p>
+                <label class="container">Lorem Ipsum
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <button onclick="check()">Submit</button>
+                <input type="reset" class="btb_reset" style="float: right"/><br>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+body{font-family: sans-serif; user-select: none;}
+.input{
+  width: 100%; height: 30px; outline: none;
+  font-size: 20px; border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 5px; margin-top: 5px; text-align: center;
+  border-top: none; border-right: none; border-left: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.input:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.input:focus{background-color: #eceff1}
+.input::before{background-color: white}
+textarea{
+  width: 100%; height: 200px; outline: none;
+  font-size: 20px; border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 5px; margin-top: 5px; text-align: left;
+  border-top: none; border-right: none; border-left: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+textarea:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+button{
+  border-radius: 5px; width: 200px; height: 30px;
+  font-size: 22px; outline-width: 0px; border-width: 1px; border-style: hidden;
+  margin-right: 9px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+button:hover{box-shadow: 0 0 3pt 2pt #7986cb;}
+.btb_reset{
+  border-radius: 5px; width: 200px; height: 30px; background-color: #e64a19; color: white;
+  font-size: 22px; outline-width: 0px; border-width: 1px; border-style: hidden;
+  margin-left: 9px; margin-right: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+button:hover{box-shadow: 0px 0px 14pt 10pt #cfd8dc}
+form{
+  width: 95%; height: auto;
+  margin: auto;
+}
+.error{
+  color: #d32f2f;
+}
+.btb_reset:hover{box-shadow: 0px 0px 14pt 10pt #dd2c00}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkmark:hover{
+  box-shadow: 0 0 3pt 2pt #7986cb;
+}
