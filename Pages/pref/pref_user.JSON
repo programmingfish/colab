@@ -1,0 +1,7 @@
+{
+"acces_true":["settings","drive","calender_priv","grades","hooks"],
+"acces_false":["admin_set","teach","control","test","accounts"],
+"title":"Name Here",
+"cookies":"yes",
+"adapt":"no",
+}
