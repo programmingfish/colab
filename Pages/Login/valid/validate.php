@@ -1,4 +1,5 @@
 <?php
+    //this php file is for testing purposes only
     echo "Please wait while we are validiting your input...<br>";
     if($_POST["psw"] == "1234" && $_POST["user"] == "admin"){
         echo "Welcome";
