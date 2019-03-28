@@ -1,1 +1,8 @@
 
+{
+"acces_true":"",
+"acces_false":["settings","grades","calender_priv","drive"],
+"name":"guest",
+"cookies":"no",
+"save":"no",
+}
